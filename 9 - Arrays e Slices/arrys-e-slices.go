@@ -14,7 +14,7 @@ func main() {
 	array1[0] = "Posição 1"
 	fmt.Println(array1)
 
-	array2 := [5]string{"Posicação 1,Posicação 2,Posicação 3,Posicação 4,Posicação 5"}
+	array2 := [5]string{"Posicação 1", "Posicação 2", "Posicação 3", "Posicação 4", "Posicação 5"}
 	fmt.Println(array2)
 
 	array3 := [...]int{1, 2, 3, 4, 5}
@@ -32,6 +32,7 @@ func main() {
 	fmt.Println(slice)
 
 	//Pegando fatias
+	fmt.Println(array2)
 	slice2 := array2[1:3]
 	fmt.Println(slice2)
 
