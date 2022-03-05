@@ -3,8 +3,14 @@ package main
 import "fmt"
 
 type usuario struct {
-	nome  string
-	idade uint8
+	nome     string
+	idade    uint8
+	endereco endereco
+}
+
+type endereco struct {
+	logradouro string
+	numero     uint8
 }
 
 func main() {
@@ -16,8 +22,10 @@ func main() {
 	u.idade = 21
 	fmt.Println(u)
 
+	enderecoExemplo := endereco{"Rua dos bobos", 0}
+
 	//assim,
-	usuario2 := usuario{"Mara", 20}
+	usuario2 := usuario{"Mara", 20, enderecoExemplo}
 	fmt.Println(usuario2)
 
 	//ou assim, caso precise de menos valores
